@@ -1,0 +1,17 @@
+code{
+	/*background: gray;*/
+	color: white;
+	font-style: bold;
+}
+
+[class^="_chatMessageUser_"] {
+    justify-content: flex-start !important; /* Example property */
+}
+
+[class^="_answerContainer"] {
+    background: rgb(80 80 80); !important; /* Example property */
+}
+
+[class^="_answerDisclaimer"] {
+    visibility: hidden !important; /* Example property */
+}
