@@ -29,6 +29,14 @@ script.onload = function() {
     observer.observe(document.body, { childList: true, subtree: true });
     document.body.appendChild(scriptPy);
 	document.body.appendChild(scriptBash);
+	
+	document.addEventListener('keydown', function(event) {
+	    if (event.metaKey && event.key === 'l') {
+	        event.preventDefault(); // prevent the default action
+	        document.getElementById('TextField10').focus();
+	    }
+	});
+	
 };
 
 document.body.appendChild(script);
